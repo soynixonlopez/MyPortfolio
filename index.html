@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nixon López | Developer & Profesor</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="resume.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="newsletter.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <span class="logo-text">NIXON</span>
+            </a>
+            
+            <!-- Mobile Toggle -->
+            <button class="navbar-toggler" type="button" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Navigation -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                </ul>
+                
+                <!-- Actions -->
+                <div class="d-flex align-items-center">
+                    <a href="#contact" class="btn btn-primary me-3">Contact Me</a>
+                    <button class="theme-toggle" id="theme-toggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container hero-container">
+            <div class="row align-items-center gy-5 gx-lg-5">
+                <!-- Contenido de texto -->
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <span class="hero-subtitle">// ¡Hola! Soy Nixon López</span>
+                        <h1 class="hero-title">
+                            Developer &
+                            <span class="highlight">Profesor</span>
+                        </h1>
+                        <div class="hero-roles" id="hero-roles">
+                            <!-- Los roles se insertarán aquí por JS -->
+                            <span class="role">Web Developer</span> 
+                            <span class="role">Profesor de Programación</span> 
+                            <span class="role">Tech Enthusiast</span>
+                        </div>
+                        <p class="hero-description">
+                            Apasionado por crear soluciones digitales innovadoras y compartir conocimiento tecnológico. Bienvenido a mi espacio digital.
+                        </p>
+                        <div class="hero-cta">
+                            <a href="#contact" class="btn btn-primary">
+                                <i class="fas fa-paper-plane me-2"></i> Contactar
+                            </a>
+                            <a href="#portfolio" class="btn btn-outline">
+                                <i class="fas fa-briefcase me-2"></i> Ver Proyectos
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Imagen -->
+                <div class="col-lg-6">
+                    <div class="hero-image-container">
+                        <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                             alt="Espacio de trabajo tecnológico" 
+                             class="hero-image">
+                        <!-- Puedes añadir elementos decorativos aquí si lo deseas -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Elementos de fondo (si los hubiera, como partículas) irían aquí fuera del container -->
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <!-- Columna de Imagen -->
+                <div class="about-image-column">
+                    <div class="about-image-wrapper">
+                        <img src="https://images.pexels.com/photos/4974915/pexels-photo-4974915.jpeg" 
+                             alt="Nixon López - Desarrollador" 
+                             class="about-image">
+                    </div>
+                    <!-- Badge de experiencia opcional, se puede estilizar o eliminar -->
+                    <!-- 
+                    <div class="experience-badge">
+                        <div class="exp-number">5+</div>
+                        <div class="exp-text">Años de Experiencia</div>
+                    </div> 
+                    -->
+                </div>
+
+                <!-- Columna de Contenido -->
+                <div class="about-content-column">
+                    <div class="about-content-header">
+                        <span class="section-badge">Sobre mí</span>
+                        <h2 class="section-title">Desarrollador & Educador Apasionado</h2>
+                    </div>
+                    
+                    <p class="about-description">
+                        Soy un desarrollador web full-stack y educador tecnológico con una profunda pasión por crear soluciones digitales innovadoras y compartir conocimientos. Mi objetivo es construir software que no solo funcione, sino que también inspire y facilite la vida de las personas. Me encanta explorar nuevas tecnologías y encontrar formas creativas de aplicarlas.
+                    </p>
+                    
+                    <!-- Stats Grid -->
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="100">0</div>
+                            <div class="stat-label">Proyectos Completados</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="500">0</div>
+                            <div class="stat-label">Estudiantes Mentoreados</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="15">0</div>
+                            <div class="stat-label">Certificaciones Técnicas</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-badge">Mi Trayectoria</span>
+                <h2 class="section-title">Experiencia & Educación</h2>
+                <p class="section-description">Mi camino en el desarrollo web y la educación tecnológica</p>
+            </div>
+
+            <div class="resume-container">
+                <!-- Columna de Experiencia -->
+                <div class="resume-column">
+                    <div class="column-header">
+                        <div class="column-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h3 class="column-title">Experiencia</h3>
+                    </div>
+
+                    <!-- Item 1 -->
+                    <div class="resume-item">
+                        <span class="resume-date">2021 - Presente</span>
+                        <h4 class="resume-title">Senior Web Developer</h4>
+                        <p class="resume-subtitle">TechCorp Solutions</p>
+                        <ul class="resume-details">
+                            <li>Liderazgo de equipo de desarrollo full-stack</li>
+                            <li>Implementación de arquitecturas modernas y escalables</li>
+                            <li>Optimización de rendimiento y experiencia de usuario</li>
+                        </ul>
+                        <div class="resume-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>AWS</span>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="resume-item">
+                        <span class="resume-date">2019 - 2021</span>
+                        <h4 class="resume-title">Full Stack Developer</h4>
+                        <p class="resume-subtitle">InnovaTech</p>
+                        <ul class="resume-details">
+                            <li>Desarrollo full stack con MERN</li>
+                            <li>Integración de APIs y microservicios</li>
+                            <li>Implementación de CI/CD pipelines</li>
+                        </ul>
+                        <div class="resume-tech">
+                            <span>MongoDB</span>
+                            <span>Express</span>
+                            <span>React</span>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="resume-item">
+                        <span class="resume-date">2017 - 2019</span>
+                        <h4 class="resume-title">Frontend Developer</h4>
+                        <p class="resume-subtitle">WebSolutions Inc</p>
+                        <ul class="resume-details">
+                            <li>Desarrollo de interfaces modernas y responsivas</li>
+                            <li>Optimización de rendimiento frontend</li>
+                            <li>Implementación de mejores prácticas UX/UI</li>
+                        </ul>
+                        <div class="resume-tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Columna de Educación -->
+                <div class="resume-column">
+                    <div class="column-header">
+                        <div class="column-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3 class="column-title">Educación</h3>
+                    </div>
+
+                    <!-- Item 1 -->
+                    <div class="resume-item">
+                        <span class="resume-date">2015 - 2019</span>
+                        <h4 class="resume-title">Ingeniería en Sistemas</h4>
+                        <p class="resume-subtitle">Universidad Tecnológica</p>
+                        <ul class="resume-details">
+                            <li>Especialización en Desarrollo Web</li>
+                            <li>Proyecto destacado en Inteligencia Artificial</li>
+                            <li>Premio a la excelencia académica</li>
+                        </ul>
+                        <div class="resume-achievements">
+                            <span class="achievement">
+                                <i class="fas fa-trophy"></i>
+                                Mejor Proyecto Final
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="resume-item">
+                        <span class="resume-date">2020 - 2021</span>
+                        <h4 class="resume-title">Certificación Full Stack</h4>
+                        <p class="resume-subtitle">Tech Academy</p>
+                        <ul class="resume-details">
+                            <li>MERN Stack Development</li>
+                            <li>Arquitectura de Software</li>
+                            <li>DevOps y CI/CD</li>
+                        </ul>
+                        <div class="resume-achievements">
+                            <span class="achievement">
+                                <i class="fas fa-certificate"></i>
+                                AWS Certified
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="resume-item">
+                        <span class="resume-date">2019 - 2020</span>
+                        <h4 class="resume-title">Especialización UI/UX</h4>
+                        <p class="resume-subtitle">Design Institute</p>
+                        <ul class="resume-details">
+                            <li>Diseño de Interfaces</li>
+                            <li>Experiencia de Usuario</li>
+                            <li>Design Systems</li>
+                        </ul>
+                        <div class="resume-achievements">
+                            <span class="achievement">
+                                <i class="fas fa-star"></i>
+                                Top Designer Award
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="services-header">
+                <span class="section-badge">Mis Servicios</span>
+                <h2 class="section-title">Soluciones Digitales</h2>
+                <p class="section-description">Servicios especializados para potenciar tu presencia digital</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Service Card 1 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Desarrollo Web para Emprendedores</h3>
+                        <p>Creación de sitios web profesionales y funcionales que impulsan el crecimiento de tu negocio.</p>
+                        <ul class="service-features">
+                            <li>
+                                <i class="fas fa-check"></i>
+                                <span>Diseño Personalizado</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                <span>Optimización SEO</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                <span>Integración de E-commerce</span>
+                            </li>
+                        </ul>
+                        <div class="service-tech">
+                            <span>WordPress</span>
+                            <span>Shopify</span>
+                            <span>WooCommerce</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>UI & UX Design</h3>
+                        <p>Diseño de interfaces intuitivas y experiencias de usuario que cautivan a tus clientes.</p>
+                        <ul class="service-features">
+                            <li>
+                                <i class="fas fa-check"></i>
+                                <span>Diseño Responsivo</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                <span>Prototipado Interactivo</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                <span>Test de Usabilidad</span>
+                            </li>
+                        </ul>
+                        <div class="service-tech">
+                            <span>Figma</span>
+                            <span>Adobe XD</span>
+                            <span>Sketch</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Publicidad Digital</h3>
+                        <p>Estrategias de publicidad efectivas en Meta Ads y Google Ads para maximizar tu ROI.</p>
+                        <ul class="service-features">
+                            <li>
+                                <i class="fas fa-check"></i>
+                                <span>Campañas Meta Ads</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                <span>Google Ads</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                <span>Analítica y Optimización</span>
+                            </li>
+                        </ul>
+                        <div class="service-tech">
+                            <span>Meta Ads</span>
+                            <span>Google Ads</span>
+                            <span>Analytics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <div class="portfolio-header">
+                <span class="section-badge">Portfolio</span>
+                <h2 class="section-title">Mis Proyectos</h2>
+                <p class="section-description">Explora mis trabajos más destacados en diferentes áreas de especialización</p>
+            </div>
+
+            <!-- Portfolio Filter -->
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="web">Desarrollo Web</button>
+                <button class="filter-btn" data-filter="ui">UI/UX Design</button>
+                <button class="filter-btn" data-filter="marketing">Publicidad Digital</button>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div class="portfolio-grid">
+                <!-- Web Development Projects -->
+                <div class="portfolio-item" data-category="web">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d2ViJTIwZGV2ZWxvcG1lbnR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60" alt="E-commerce Website">
+                    <div class="portfolio-overlay">
+                        <h3>E-commerce Website</h3>
+                        <p>Desarrollo Web</p>
+                        <a href="#" class="portfolio-link">Ver Proyecto</a>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="web">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d2ViJTIwZGV2ZWxvcG1lbnR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60" alt="Business Platform">
+                    <div class="portfolio-overlay">
+                        <h3>Business Platform</h3>
+                        <p>Desarrollo Web</p>
+                        <a href="#" class="portfolio-link">Ver Proyecto</a>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="web">
+                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHdlYiUyMGRldmVsb3BtZW50fGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60" alt="Portfolio Website">
+                    <div class="portfolio-overlay">
+                        <h3>Portfolio Website</h3>
+                        <p>Desarrollo Web</p>
+                        <a href="#" class="portfolio-link">Ver Proyecto</a>
+                    </div>
+                </div>
+
+                <!-- UI/UX Design Projects -->
+                <div class="portfolio-item" data-category="ui">
+                    <img src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHVpJTIwZGVzaWdufGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60" alt="Mobile App Design">
+                    <div class="portfolio-overlay">
+                        <h3>Mobile App Design</h3>
+                        <p>UI/UX Design</p>
+                        <a href="#" class="portfolio-link">Ver Proyecto</a>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="ui">
+                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dWklMjBkZXNpZ258ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60" alt="Dashboard UI">
+                    <div class="portfolio-overlay">
+                        <h3>Dashboard UI</h3>
+                        <p>UI/UX Design</p>
+                        <a href="#" class="portfolio-link">Ver Proyecto</a>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="ui">
+                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHVpJTIwZGVzaWdufGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60" alt="E-commerce UI">
+                    <div class="portfolio-overlay">
+                        <h3>E-commerce UI</h3>
+                        <p>UI/UX Design</p>
+                        <a href="#" class="portfolio-link">Ver Proyecto</a>
+                    </div>
+                </div>
+
+                <!-- Digital Marketing Projects -->
+                <div class="portfolio-item" data-category="marketing">
+                    <img src="https://images.unsplash.com/photo-1611926653458-09294b3142bf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZGlnaXRhbCUyMG1hcmtldGluZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="Social Media Campaign">
+                    <div class="portfolio-overlay">
+                        <h3>Social Media Campaign</h3>
+                        <p>Publicidad Digital</p>
+                        <a href="#" class="portfolio-link">Ver Proyecto</a>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="marketing">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZGlnaXRhbCUyMG1hcmtldGluZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="SEO Strategy">
+                    <div class="portfolio-overlay">
+                        <h3>SEO Strategy</h3>
+                        <p>Publicidad Digital</p>
+                        <a href="#" class="portfolio-link">Ver Proyecto</a>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="marketing">
+                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGRpZ2l0YWwlMjBtYXJrZXRpbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60" alt="Content Marketing">
+                    <div class="portfolio-overlay">
+                        <h3>Content Marketing</h3>
+                        <p>Publicidad Digital</p>
+                        <a href="#" class="portfolio-link">Ver Proyecto</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ver Más Button -->
+            <div class="view-more-container">
+                <a href="portfolio.html" class="view-more-btn">
+                    Ver más proyectos <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog-section">
+        <div class="container">
+            <div class="blog-header">
+                <div class="left">
+                    <span class="section-badge">Blog</span>
+                    <h2 class="section-title">Artículos Recientes</h2>
+                    <p class="section-subtitle">Explora mis últimas publicaciones sobre desarrollo web, diseño y tecnología</p>
+                </div>
+                <a href="blog.html" class="blog-view-btn">
+                    Ver todos los artículos <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="blog-grid">
+                <!-- Artículo 1 -->
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1593720213428-28a5b9e94613?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60" alt="Desarrollo Web">
+                        <div class="blog-category">Desarrollo</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-date">
+                            <i class="far fa-calendar"></i> 15 Mar 2024
+                        </div>
+                        <h3>Tendencias en Desarrollo Web 2024: Lo que necesitas saber</h3>
+                        <a href="#" class="blog-link">
+                            Leer artículo <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Artículo 2 -->
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1616400619175-5beda3a17896?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60" alt="UI/UX Design">
+                        <div class="blog-category">Diseño</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-date">
+                            <i class="far fa-calendar"></i> 8 Mar 2024
+                        </div>
+                        <h3>Principios UX para Desarrolladores: Mejora la experiencia de usuario</h3>
+                        <a href="#" class="blog-link">
+                            Leer artículo <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Artículo 3 -->
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60" alt="AI">
+                        <div class="blog-category">Tecnología</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-date">
+                            <i class="far fa-calendar"></i> 28 Feb 2024
+                        </div>
+                        <h3>Integración de IA en Proyectos Web: Guía práctica</h3>
+                        <a href="#" class="blog-link">
+                            Leer artículo <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section id="contact" class="newsletter-section">
+        <div class="container newsletter-container">
+            <div class="newsletter-content">
+                <div class="newsletter-header">
+                    <span class="section-badge">Newsletter</span>
+                    <h2 class="section-title">Únete a la Comunidad Tech</h2>
+                    <p class="section-description">Recibe contenido exclusivo sobre desarrollo web, diseño y tecnología. Mantente actualizado con las últimas tendencias y recursos para impulsar tu carrera.</p>
+                </div>
+
+                <div class="newsletter-form-container">
+                    <form class="newsletter-form">
+                        <div class="newsletter-input-group">
+                            <input type="email" class="newsletter-input" placeholder="Tu correo electrónico" required>
+                        </div>
+                        <button type="submit" class="newsletter-submit">
+                            <i class="fas fa-paper-plane me-2"></i> Suscribirse
+                        </button>
+                    </form>
+
+                    <div class="newsletter-trust">
+                        <div class="trust-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Privacidad Garantizada</span>
+                        </div>
+                        <div class="trust-item">
+                            <i class="fas fa-bell"></i>
+                            <span>Actualizaciones Semanales</span>
+                        </div>
+                        <div class="trust-item">
+                            <i class="fas fa-gift"></i>
+                            <span>Recursos Exclusivos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Brand Column -->
+                <div class="footer-brand">
+                    <h3>NIXON</h3>
+                    <p>Transformando ideas en realidad digital. Creando experiencias web excepcionales y compartiendo conocimiento tecnológico.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-links">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">Sobre Mí</a></li>
+                        <li><a href="#services">Servicios</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="footer-links">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="#services">Desarrollo Web</a></li>
+                        <li><a href="#services">UI/UX Design</a></li>
+                        <li><a href="#services">Publicidad Digital</a></li>
+                        <li><a href="#services">Consultoría Tech</a></li>
+                        <li><a href="#services">Mentoría</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="footer-contact">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-envelope"></i> contact@nixonlopez.com</p>
+                    <p><i class="fas fa-phone"></i> +123 456 7890</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Ciudad, País</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 Nixon López. Todos los derechos reservados.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Política de Privacidad</a>
+                        <a href="#">Términos y Condiciones</a>
+                        <a href="#">Aviso Legal</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 

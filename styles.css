@@ -1,0 +1,254 @@
+/* Variables CSS */
+:root {
+    /* Colores primarios */
+    --primary-color: #0070f3;
+    --primary-hover: #0051a9;
+    --primary-light: #e3f2fd;
+    
+    /* Colores de acento */
+    --accent-color: #33d69f;
+    --accent-hover: #20b883;
+    
+    /* Colores de estado */
+    --success-color: #10b981;
+    --error-color: #ef4444;
+    --warning-color: #f59e0b;
+    --info-color: #0891b2;
+    
+    /* Colores neutrales */
+    --text-color: #202124;
+    --text-secondary: #5f6368;
+    --background-color: #ffffff;
+    --background-alt: #f8f9fa;
+    --border-color: #dadce0;
+    
+    /* Navbar */
+    --navbar-bg: #ffffff;
+    --navbar-text: #202124;
+    --navbar-hover: #0070f3;
+    --navbar-active: #0051a9;
+    --navbar-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    --navbar-height: 80px;
+    --navbar-scrolled-height: 70px;
+    --navbar-border: rgba(0, 112, 243, 0.2);
+    --glass-effect: rgba(255, 255, 255, 0.05);
+    
+    /* Otros */
+    --transition: all 0.3s ease;
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
+    --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+    --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
+}
+
+/* Tema oscuro */
+[data-theme="dark"] {
+    /* Colores primarios */
+    --primary-color: #3b82f6;
+    --primary-hover: #60a5fa;
+    --primary-light: #172554;
+    
+    /* Colores de acento */
+    --accent-color: #10b981;
+    --accent-hover: #34d399;
+    
+    /* Colores de estado */
+    --success-color: #059669;
+    --error-color: #dc2626;
+    --warning-color: #d97706;
+    --info-color: #0e7490;
+    
+    /* Colores neutrales */
+    --text-color: #e5e7eb;
+    --text-secondary: #9ca3af;
+    --background-color: #121212;
+    --background-alt: #1e1e1e;
+    --border-color: #2a2a2a;
+    
+    /* Navbar */
+    --navbar-bg: #121212;
+    --navbar-text: #e5e7eb;
+    --navbar-hover: #3b82f6;
+    --navbar-active: #60a5fa;
+    --navbar-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    --navbar-border: rgba(59, 130, 246, 0.2);
+    --glass-effect: rgba(0, 0, 0, 0.15);
+}
+
+/* ======================================
+   Estilos de Tipografía
+   ====================================== */
+:root {
+    --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'JetBrains Mono', 'SF Mono', SFMono-Regular, Consolas, monospace;
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --line-height-tight: 1.2;
+    --line-height-normal: 1.5;
+    --line-height-loose: 1.8;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: var(--font-primary);
+    line-height: var(--line-height-normal);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: var(--transition);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-tight);
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+h1 {
+    font-size: 2.5rem;
+    letter-spacing: -0.5px;
+}
+
+h2 {
+    font-size: 2rem;
+    letter-spacing: -0.3px;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
+h5 {
+    font-size: 1.125rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+p {
+    margin-bottom: 1.5rem;
+    color: var(--text-secondary);
+}
+
+.text-mono {
+    font-family: var(--font-mono);
+}
+
+.text-gradient {
+    background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+/* Transición para cambio de tema */
+.theme-transition,
+.theme-transition *,
+.theme-transition *:before,
+.theme-transition *:after {
+    transition: all 0.5s ease-in-out !important;
+}
+
+/* ======================================
+   Botones Estandarizados
+   ====================================== */
+.btn {
+    padding: 0.625rem 1.25rem;
+    font-weight: var(--font-weight-medium);
+    font-size: 0.9375rem;
+    border-radius: var(--radius-md);
+    transition: var(--transition);
+        border: none;
+    display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    letter-spacing: 0.3px;
+    text-decoration: none;
+        cursor: pointer;
+    line-height: 1.5;
+}
+
+.btn i, 
+.btn svg {
+    margin-left: 0.5rem;
+}
+
+/* Botón primario */
+.btn-primary {
+    background-color: var(--primary-color);
+        color: white !important;
+    box-shadow: 0 4px 14px rgba(0, 112, 243, 0.25);
+}
+
+.btn-primary:hover, 
+.btn-primary:focus {
+    background-color: var(--primary-hover);
+    box-shadow: 0 6px 20px rgba(0, 112, 243, 0.35);
+    transform: translateY(-2px);
+}
+
+/* Botón secundario */
+.btn-outline {
+    background-color: transparent;
+    color: var(--text-color) !important;
+    border: 1.5px solid var(--border-color);
+}
+
+.btn-outline:hover, 
+.btn-outline:focus {
+    border-color: var(--primary-color);
+    color: var(--primary-color) !important;
+    transform: translateY(-2px);
+}
+
+/* Botón acento */
+.btn-accent {
+    background-color: var(--accent-color);
+    color: white !important;
+    box-shadow: 0 4px 14px rgba(16, 185, 129, 0.25);
+}
+
+.btn-accent:hover, 
+.btn-accent:focus {
+    background-color: var(--accent-hover);
+    box-shadow: 0 6px 20px rgba(16, 185, 129, 0.35);
+    transform: translateY(-2px);
+}
+
+/* Botón fantasma */
+.btn-ghost {
+    background-color: transparent;
+    color: var(--primary-color) !important;
+}
+
+.btn-ghost:hover, 
+.btn-ghost:focus {
+    background-color: var(--primary-light);
+    transform: translateY(-2px);
+}
+
+/* Tamaños de botón */
+.btn-sm {
+    padding: 0.375rem 0.875rem;
+    font-size: 0.8125rem;
+}
+
+.btn-lg {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.0625rem;
+}
