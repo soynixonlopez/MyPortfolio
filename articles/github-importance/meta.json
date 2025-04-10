@@ -1,0 +1,12 @@
+{
+    "id": "github-importance",
+    "title": "GitHub: La Plataforma que Revolucionó el Desarrollo Colaborativo",
+    "description": "Descubre por qué GitHub es fundamental para el desarrollo moderno y cómo puede impulsar tu carrera como desarrollador.",
+    "author": "Nixon López",
+    "date": "2024-04-09",
+    "readTime": "10 min",
+    "category": "Git",
+    "tags": ["github", "git", "colaboración", "desarrollo"],
+    "image": "/assets/articles/github-importance.jpg",
+    "related": ["git-basics"]
+} 

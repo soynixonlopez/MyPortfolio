@@ -1,0 +1,27 @@
+{
+  "id": "scrum-methodology",
+  "title": "Scrum: Guía Completa de la Metodología Ágil más Popular",
+  "description": "Descubre todo sobre Scrum, desde sus principios fundamentales hasta su implementación práctica. Una guía detallada para equipos de desarrollo.",
+  "author": {
+    "name": "Nixon López",
+    "avatar": "/images/author-avatar.jpg",
+    "bio": "Desarrollador Full Stack y Scrum Master Certificado"
+  },
+  "publishDate": "2024-04-07",
+  "readTime": "18 min",
+  "category": "Metodologías",
+  "tags": [
+    "Scrum",
+    "Agile",
+    "Gestión de Proyectos",
+    "Desarrollo",
+    "Equipos",
+    "Metodologías Ágiles"
+  ],
+  "heroImage": "/images/articles/scrum-hero.jpg",
+  "relatedArticles": [
+    "git-para-trabajos-colaborativos",
+    "vscode-guide",
+    "web-dev-trends-2024"
+  ]
+} 

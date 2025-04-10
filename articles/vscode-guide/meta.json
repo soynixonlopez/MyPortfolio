@@ -1,0 +1,27 @@
+{
+  "id": "vscode-guide",
+  "title": "Visual Studio Code: La Herramienta Definitiva para Desarrolladores",
+  "description": "Una guía completa sobre Visual Studio Code, explorando sus características, extensiones esenciales y mejores prácticas para maximizar tu productividad.",
+  "author": {
+    "name": "Nixon López",
+    "avatar": "/images/author-avatar.jpg",
+    "bio": "Desarrollador Full Stack y educador tecnológico"
+  },
+  "publishDate": "2024-04-08",
+  "readTime": "12 min",
+  "category": "Herramientas",
+  "tags": [
+    "VS Code",
+    "IDE",
+    "Desarrollo",
+    "Productividad",
+    "Herramientas",
+    "Extensiones"
+  ],
+  "heroImage": "/images/articles/vscode-hero.jpg",
+  "relatedArticles": [
+    "git-para-trabajos-colaborativos",
+    "web-dev-trends-2024",
+    "scrum-methodology"
+  ]
+} 

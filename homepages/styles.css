@@ -1,13 +1,15 @@
 /* Variables CSS */
 :root {
     /* Colores primarios */
-    --primary-color: #0070f3;
-    --primary-hover: #0051a9;
+    --primary-color: #3b82f6;
+    --primary-hover: #60a5fa;
     --primary-light: #e3f2fd;
+    --primary-rgb: 59, 130, 246;
     
     /* Colores de acento */
     --accent-color: #33d69f;
     --accent-hover: #20b883;
+    --accent-rgb: 51, 214, 159;
     
     /* Colores de estado */
     --success-color: #10b981;
@@ -25,12 +27,12 @@
     /* Navbar */
     --navbar-bg: #ffffff;
     --navbar-text: #202124;
-    --navbar-hover: #0070f3;
-    --navbar-active: #0051a9;
+    --navbar-hover: #3b82f6;
+    --navbar-active: #60a5fa;
     --navbar-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     --navbar-height: 80px;
     --navbar-scrolled-height: 70px;
-    --navbar-border: rgba(0, 112, 243, 0.2);
+    --navbar-border: rgba(59, 130, 246, 0.2);
     --glass-effect: rgba(255, 255, 255, 0.05);
     
     /* Otros */

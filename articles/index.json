@@ -1,0 +1,68 @@
+{
+    "articles": [
+        {
+            "id": "web-dev-trends-2024",
+            "title": "Tendencias en Desarrollo Web 2024: El Futuro de la Web",
+            "description": "Explora las últimas tendencias en desarrollo web, desde arquitecturas modernas hasta tecnologías emergentes.",
+            "category": "Desarrollo Web",
+            "publishDate": "2024-04-10",
+            "readTime": "15 min",
+            "heroImage": "/images/articles/web-trends-hero.jpg"
+        },
+        {
+            "id": "git-para-trabajos-colaborativos",
+            "title": "Git para Trabajos Colaborativos en Proyectos Web",
+            "description": "Aprende a utilizar Git efectivamente para trabajos colaborativos en proyectos web.",
+            "category": "Desarrollo",
+            "publishDate": "2024-04-09",
+            "readTime": "10 min",
+            "heroImage": "/images/articles/git-collaboration.jpg"
+        },
+        {
+            "id": "vscode-guide",
+            "title": "Visual Studio Code: La Herramienta Definitiva para Desarrolladores",
+            "description": "Una guía completa sobre Visual Studio Code, explorando sus características y extensiones esenciales.",
+            "category": "Herramientas",
+            "publishDate": "2024-04-08",
+            "readTime": "12 min",
+            "heroImage": "/images/articles/vscode-hero.jpg"
+        },
+        {
+            "id": "scrum-methodology",
+            "title": "Scrum: Guía Completa de la Metodología Ágil más Popular",
+            "description": "Descubre todo sobre Scrum, desde sus principios fundamentales hasta su implementación práctica.",
+            "category": "Metodologías",
+            "publishDate": "2024-04-07",
+            "readTime": "18 min",
+            "heroImage": "/images/articles/scrum-hero.jpg"
+        }
+    ],
+    "categories": [
+        {
+            "id": "desarrollo-web",
+            "name": "Desarrollo Web",
+            "count": 1
+        },
+        {
+            "id": "desarrollo",
+            "name": "Desarrollo",
+            "count": 1
+        },
+        {
+            "id": "herramientas",
+            "name": "Herramientas",
+            "count": 1
+        },
+        {
+            "id": "metodologias",
+            "name": "Metodologías",
+            "count": 1
+        }
+    ],
+    "featuredArticle": "web-dev-trends-2024",
+    "latestArticles": [
+        "web-dev-trends-2024",
+        "git-para-trabajos-colaborativos",
+        "vscode-guide"
+    ]
+} 

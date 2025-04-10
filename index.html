@@ -10,62 +10,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Componentes -->
+    <link rel="stylesheet" href="components/header.css">
+    <link rel="stylesheet" href="components/footer.css">
     <!-- CSS personalizado -->
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="about.css">
-    <link rel="stylesheet" href="resume.css">
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="services.css">
-    <link rel="stylesheet" href="portfolio.css">
-    <link rel="stylesheet" href="blog.css">
-    <link rel="stylesheet" href="newsletter.css">
-    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="homepages/styles.css">
+    <link rel="stylesheet" href="homepages/main.css">
+    <link rel="stylesheet" href="homepages/about.css">
+    <link rel="stylesheet" href="homepages/resume.css">
+    <link rel="stylesheet" href="homepages/services.css">
+    <link rel="stylesheet" href="homepages/portfolio.css">
+    <link rel="stylesheet" href="homepages/main-blog.css">
+    <link rel="stylesheet" href="homepages/newsletter.css">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
-            <!-- Logo -->
-            <a class="navbar-brand" href="#">
-                <span class="logo-text">NIXON</span>
-            </a>
-            
-            <!-- Mobile Toggle -->
-            <button class="navbar-toggler" type="button" aria-label="Toggle navigation" aria-expanded="false">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <!-- Navigation -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#blog">Blog</a>
-                    </li>
-                </ul>
-                
-                <!-- Actions -->
-                <div class="d-flex align-items-center">
-                    <a href="#contact" class="btn btn-primary me-3">Contact Me</a>
-                    <button class="theme-toggle" id="theme-toggle">
-                        <i class="fas fa-moon"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </nav>
+    <!-- Header Component -->
+    <div id="header"></div>
 
     <!-- Hero Section -->
     <section id="home" class="hero-section">
@@ -80,10 +40,7 @@
                             <span class="highlight">Profesor</span>
                         </h1>
                         <div class="hero-roles" id="hero-roles">
-                            <!-- Los roles se insertarán aquí por JS -->
-                            <span class="role">Web Developer</span> 
-                            <span class="role">Profesor de Programación</span> 
-                            <span class="role">Tech Enthusiast</span>
+                            <!-- Los roles se insertarán dinámicamente por JS -->
                         </div>
                         <p class="hero-description">
                             Apasionado por crear soluciones digitales innovadoras y compartir conocimiento tecnológico. Bienvenido a mi espacio digital.
@@ -531,52 +488,55 @@
             </div>
 
             <div class="blog-grid">
-                <!-- Artículo 1 -->
+                <!-- Artículo 1: Web Dev Trends 2024 -->
                 <div class="blog-card">
                     <div class="blog-image">
-                        <img src="https://images.unsplash.com/photo-1593720213428-28a5b9e94613?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60" alt="Desarrollo Web">
+                        <img src="https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Tendencias Desarrollo Web 2024">
+                        <div class="blog-category">Desarrollo Web</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-date">
+                            <i class="far fa-calendar"></i> 10 Abril 2024
+                        </div>
+                        <h3>Tendencias en Desarrollo Web 2024: El Futuro de la Web</h3>
+                        <p>Explora las últimas tendencias en desarrollo web, desde arquitecturas modernas hasta tecnologías emergentes.</p>
+                        <a href="pages/article.html?id=web-dev-trends-2024" class="blog-link">
+                            Leer artículo <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Artículo 2: Git para Trabajos Colaborativos -->
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Git Colaboración">
                         <div class="blog-category">Desarrollo</div>
                     </div>
                     <div class="blog-content">
                         <div class="blog-date">
-                            <i class="far fa-calendar"></i> 15 Mar 2024
+                            <i class="far fa-calendar"></i> 9 Abril 2024
                         </div>
-                        <h3>Tendencias en Desarrollo Web 2024: Lo que necesitas saber</h3>
-                        <a href="#" class="blog-link">
+                        <h3>Git para Trabajos Colaborativos en Proyectos Web</h3>
+                        <p>Aprende a utilizar Git efectivamente para trabajos colaborativos en proyectos web.</p>
+                        <a href="pages/article.html?id=git-para-trabajos-colaborativos" class="blog-link">
                             Leer artículo <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
                 </div>
 
-                <!-- Artículo 2 -->
+                <!-- Artículo 3: VS Code Guide -->
                 <div class="blog-card">
                     <div class="blog-image">
-                        <img src="https://images.unsplash.com/photo-1616400619175-5beda3a17896?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60" alt="UI/UX Design">
-                        <div class="blog-category">Diseño</div>
+                        <img src="https://images.pexels.com/photos/11035471/pexels-photo-11035471.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="VS Code Guide">
+                        <div class="blog-category">Herramientas</div>
                     </div>
                     <div class="blog-content">
                         <div class="blog-date">
-                            <i class="far fa-calendar"></i> 8 Mar 2024
+                            <i class="far fa-calendar"></i> 8 Abril 2024
                         </div>
-                        <h3>Principios UX para Desarrolladores: Mejora la experiencia de usuario</h3>
-                        <a href="#" class="blog-link">
-                            Leer artículo <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Artículo 3 -->
-                <div class="blog-card">
-                    <div class="blog-image">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60" alt="AI">
-                        <div class="blog-category">Tecnología</div>
-                    </div>
-                    <div class="blog-content">
-                        <div class="blog-date">
-                            <i class="far fa-calendar"></i> 28 Feb 2024
-                        </div>
-                        <h3>Integración de IA en Proyectos Web: Guía práctica</h3>
-                        <a href="#" class="blog-link">
+                        <h3>Visual Studio Code: La Herramienta Definitiva para Desarrolladores</h3>
+                        <p>Una guía completa sobre Visual Studio Code, explorando sus características y extensiones esenciales.</p>
+                        <a href="pages/article.html?id=vscode-guide" class="blog-link">
                             Leer artículo <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
@@ -624,71 +584,12 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <!-- Brand Column -->
-                <div class="footer-brand">
-                    <h3>NIXON</h3>
-                    <p>Transformando ideas en realidad digital. Creando experiencias web excepcionales y compartiendo conocimiento tecnológico.</p>
-                </div>
-
-                <!-- Quick Links -->
-                <div class="footer-links">
-                    <h4>Enlaces Rápidos</h4>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">Sobre Mí</a></li>
-                        <li><a href="#services">Servicios</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#blog">Blog</a></li>
-                    </ul>
-                </div>
-
-                <!-- Services -->
-                <div class="footer-links">
-                    <h4>Servicios</h4>
-                    <ul>
-                        <li><a href="#services">Desarrollo Web</a></li>
-                        <li><a href="#services">UI/UX Design</a></li>
-                        <li><a href="#services">Publicidad Digital</a></li>
-                        <li><a href="#services">Consultoría Tech</a></li>
-                        <li><a href="#services">Mentoría</a></li>
-                    </ul>
-                </div>
-
-                <!-- Contact -->
-                <div class="footer-contact">
-                    <h4>Contacto</h4>
-                    <p><i class="fas fa-envelope"></i> contact@nixonlopez.com</p>
-                    <p><i class="fas fa-phone"></i> +123 456 7890</p>
-                    <p><i class="fas fa-map-marker-alt"></i> Ciudad, País</p>
-                    <div class="social-links">
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <div class="footer-bottom-content">
-                    <p>&copy; 2024 Nixon López. Todos los derechos reservados.</p>
-                    <div class="footer-bottom-links">
-                        <a href="#">Política de Privacidad</a>
-                        <a href="#">Términos y Condiciones</a>
-                        <a href="#">Aviso Legal</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <!-- Footer Component -->
+    <div id="footer"></div>
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+    <script src="components/components.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html> 

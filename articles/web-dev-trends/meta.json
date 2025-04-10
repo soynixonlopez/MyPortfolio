@@ -1,0 +1,29 @@
+{
+  "id": "web-dev-trends-2024",
+  "title": "Tendencias en Desarrollo Web 2024: El Futuro de la Web",
+  "description": "Explora las últimas tendencias en desarrollo web, desde arquitecturas modernas hasta tecnologías emergentes. Una guía completa sobre el futuro del desarrollo web.",
+  "author": {
+    "name": "Nixon López",
+    "avatar": "/images/author-avatar.jpg",
+    "bio": "Desarrollador Full Stack y entusiasta de las nuevas tecnologías web"
+  },
+  "publishDate": "2024-04-10",
+  "readTime": "15 min",
+  "category": "Desarrollo Web",
+  "tags": [
+    "Desarrollo Web",
+    "Frontend",
+    "Backend",
+    "JavaScript",
+    "TypeScript",
+    "React",
+    "Performance",
+    "Tendencias"
+  ],
+  "heroImage": "/images/articles/web-trends-hero.jpg",
+  "relatedArticles": [
+    "vscode-guide",
+    "git-basics",
+    "github-importance"
+  ]
+} 

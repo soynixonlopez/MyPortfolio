@@ -1,0 +1,12 @@
+{
+    "id": "git-collaboration",
+    "title": "Git para Trabajos Colaborativos en Proyectos Web",
+    "description": "Aprende los comandos esenciales de Git para trabajar en equipo y gestionar proyectos web de manera eficiente.",
+    "date": "9 Abril 2024",
+    "readTime": 10,
+    "author": "Nixon López",
+    "category": "Git",
+    "thumbnail": "../assets/articles/git-collaboration.jpg",
+    "tags": ["Git", "GitHub", "Colaboración", "Desarrollo Web", "Control de Versiones"],
+    "related": ["web-development", "team-workflow", "github-actions"]
+} 

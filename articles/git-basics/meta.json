@@ -1,0 +1,12 @@
+{
+    "id": "git-basics",
+    "title": "Fundamentos de Git: Control de Versiones Explicado",
+    "description": "Aprende los conceptos básicos de Git, el sistema de control de versiones más popular, y cómo puede mejorar tu flujo de trabajo como desarrollador.",
+    "author": "Nixon López",
+    "date": "2024-04-09",
+    "readTime": "8 min",
+    "category": "Git",
+    "tags": ["git", "control de versiones", "desarrollo", "tutorial"],
+    "image": "/assets/articles/git-basics.jpg",
+    "related": ["github-importance"]
+} 
