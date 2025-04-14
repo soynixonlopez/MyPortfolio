@@ -439,8 +439,8 @@
 .pagination-container {
     display: flex;
     justify-content: center;
-    gap: 0.5rem;
-    margin-top: 3rem;
+    gap: 1rem;
+    margin-top: 4rem;
 }
 
 .pagination-btn {
@@ -471,109 +471,6 @@
     border-radius: 50px;
 }
 
-/* Newsletter Section */
-.blog-newsletter {
-    padding: 80px 0;
-    background: var(--background-color);
-}
-
-.newsletter-card {
-    background: var(--gradient-primary);
-    border-radius: 24px;
-    padding: 3rem;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-}
-
-.newsletter-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='rgba(255,255,255,0.1)' fill-rule='evenodd'/%3E%3C/svg%3E");
-    opacity: 0.5;
-}
-
-.newsletter-content {
-    position: relative;
-    z-index: 1;
-}
-
-.newsletter-card h2 {
-    color: white;
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-}
-
-.newsletter-card p {
-    color: rgba(255, 255, 255, 0.9);
-    font-size: 1.1rem;
-    max-width: 600px;
-    margin: 0 auto 2rem;
-}
-
-.newsletter-features {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin-bottom: 2rem;
-    list-style: none;
-    padding: 0;
-}
-
-.newsletter-features li {
-    color: white;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-weight: 500;
-}
-
-.newsletter-features i {
-    color: #60a5fa;
-}
-
-.newsletter-form {
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-.form-group {
-    display: flex;
-    gap: 1rem;
-    background: white;
-    padding: 0.5rem;
-    border-radius: 50px;
-}
-
-.form-group input {
-    flex: 1;
-    border: none;
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem;
-    outline: none;
-}
-
-.form-group button {
-    background: var(--gradient-accent);
-    color: white;
-    border: none;
-    padding: 0.75rem 1.5rem;
-    border-radius: 50px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: var(--transition);
-}
-
-.form-group button:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-md);
-}
-
 /* Responsive Design */
 @media (max-width: 991px) {
     .blog-hero {
@@ -585,18 +482,15 @@
     }
 
     .hero-stats {
-        gap: 1.5rem;
-        flex-wrap: wrap;
+        gap: 2rem;
     }
 
     .stat-item {
-        flex: 1 1 calc(33.333% - 1rem);
-        min-width: 120px;
+        padding: 0.75rem;
     }
 
     .featured-article {
         grid-template-columns: 1fr;
-        margin-top: 60px;
     }
 
     .article-image {
@@ -608,13 +502,7 @@
     }
 
     .article-content h2 {
-        font-size: 2rem;
-    }
-
-    .newsletter-features {
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
+        font-size: 1.75rem;
     }
 }
 
@@ -628,8 +516,8 @@
     }
 
     .blog-badge {
-        padding: 10px 20px;
         font-size: 0.9rem;
+        padding: 8px 16px;
     }
 
     .stat-number {
@@ -637,34 +525,16 @@
     }
 
     .stat-item {
-        flex: 1 1 calc(50% - 1rem);
+        padding: 0.5rem;
     }
 
     .article-badges {
-        top: 1rem;
-        left: 1rem;
+        flex-direction: column;
         gap: 0.5rem;
     }
 
     .badge {
         padding: 0.5rem 1rem;
-        font-size: 0.85rem;
-    }
-
-    .form-group {
-        flex-direction: column;
-        background: transparent;
-        padding: 0;
-        gap: 1rem;
-    }
-
-    .form-group input {
-        width: 100%;
-        border-radius: 50px;
-        background: white;
-    }
-
-    .form-group button {
-        width: 100%;
+        font-size: 0.9rem;
     }
 }

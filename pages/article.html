@@ -3,64 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Artículo sobre desarrollo web y tecnología">
-    <title>Artículo | Nixon López</title>
+    <title>Cargando artículo...</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Prism.js Theme -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-tomorrow.min.css" rel="stylesheet">
-    <!-- Marked.js for Markdown parsing -->
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <!-- Highlight.js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github.min.css">
     <!-- Componentes -->
     <link rel="stylesheet" href="../components/header.css">
     <link rel="stylesheet" href="../components/footer.css">
+    <link rel="stylesheet" href="../components/newsletter.css">
     <!-- CSS personalizado -->
-    <link rel="stylesheet" href="../homepages/styles.css">
     <link rel="stylesheet" href="../css/article.css">
+    <link rel="stylesheet" href="../homepages/styles.css">
 </head>
 <body>
     <!-- Header Component -->
     <div id="header"></div>
 
-    <!-- Article Hero -->
+    <!-- Article Hero Section -->
     <section class="article-hero">
         <div class="container">
-            <!-- El contenido del hero se cargará dinámicamente -->
+            <div class="article-meta">
+                <span class="date">
+                    <i class="far fa-calendar"></i>
+                    <span>Cargando fecha...</span>
+                </span>
+                <span class="author">
+                    <i class="far fa-user"></i>
+                    <span>Cargando autor...</span>
+                </span>
+                <span class="read-time">
+                    <i class="far fa-clock"></i>
+                    <span>Cargando tiempo de lectura...</span>
+                </span>
+            </div>
+            <h1>Cargando título...</h1>
+            <div class="article-category">Cargando categoría...</div>
         </div>
     </section>
 
-    <!-- Article Content -->
-    <section class="article-content">
-        <!-- El contenido del artículo se cargará dinámicamente -->
-    </section>
-
-    <!-- Related Articles -->
-    <section class="related-articles">
+    <!-- Main Content -->
+    <main class="article-main">
         <div class="container">
-            <h2>Artículos Relacionados</h2>
-            <div class="row gy-4">
-                <!-- Los artículos relacionados se cargarán dinámicamente -->
+            <div class="article-layout">
+                <!-- Article Content -->
+                <article class="article-content">
+                    <!-- El contenido se cargará dinámicamente aquí -->
+                </article>
+
+                <!-- Sidebar -->
+                <aside class="article-sidebar">
+                    <!-- Tabla de Contenidos -->
+                    <div class="sidebar-widget table-of-contents">
+                        <h3>Tabla de Contenidos</h3>
+                        <!-- La tabla de contenidos se generará dinámicamente -->
+                    </div>
+
+                    <!-- Formulario de Contacto -->
+                    <div class="sidebar-widget contact-form">
+                        <h3>Tienes alguna duda, sugerencia o comentario?</h3>
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Nombre</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Mensaje</label>
+                                <textarea id="message" name="message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">
+                                <i class="fas fa-paper-plane"></i> Enviar Mensaje
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Compartir -->
+                    <div class="social-share-widget">
+                        <h3>Compartir en</h3>
+                        <div class="social-icons-list">
+                            <a href="#" class="social-icon-btn twitter-btn" title="Compartir en X (Twitter)">
+                                <i class="fab fa-x-twitter"></i>
+                            </a>
+                            <a href="#" class="social-icon-btn facebook-btn" title="Compartir en Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-icon-btn linkedin-btn" title="Compartir en LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- Author Section -->
+    <section class="author-section">
+        <div class="container">
+            <div class="author-card">
+                <div class="author-image">
+                    <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg" alt="Nixon López">
+                </div>
+                <div class="author-info">
+                    <div class="author-header">
+                        <span class="author-role">Autor del Artículo</span>
+                        <h3>Nixon López</h3>
+                    </div>
+                    <p class="author-bio">Desarrollador web y educador apasionado por compartir conocimiento. Especializado en desarrollo frontend y enseñanza de programación.</p>
+                    <div class="author-social">
+                        <a href="https://github.com/nixonlopez" target="_blank" class="social-link" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://twitter.com/nixonlopez" target="_blank" class="social-link" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/nixonlopez" target="_blank" class="social-link" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Newsletter Section -->
-    <section class="newsletter-section">
+    <!-- Related Articles -->
+    <section class="related-articles-section">
         <div class="container">
-            <div class="newsletter-content">
-                <h2>¿Te gustó el artículo?</h2>
-                <p>Suscríbete para recibir más contenido sobre desarrollo web, tecnología y mejores prácticas.</p>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Tu correo electrónico" required>
-                    <button type="submit">
-                        <i class="fas fa-paper-plane"></i>
-                        Suscribirse
-                    </button>
-                </form>
+            <h2>Artículos Relacionados</h2>
+            <div class="related-articles-grid">
+                <!-- Se cargarán dinámicamente -->
             </div>
         </div>
     </section>
@@ -70,8 +149,8 @@
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-core.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
     <script src="../components/components.js"></script>
     <script src="../js/article.js"></script>
 </body>

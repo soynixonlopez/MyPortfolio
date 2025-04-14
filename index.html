@@ -13,6 +13,8 @@
     <!-- Componentes -->
     <link rel="stylesheet" href="components/header.css">
     <link rel="stylesheet" href="components/footer.css">
+    <link rel="stylesheet" href="components/newsletter.css">
+    <link rel="stylesheet" href="components/blog-section.css">
     <!-- CSS personalizado -->
     <link rel="stylesheet" href="homepages/styles.css">
     <link rel="stylesheet" href="homepages/main.css">
@@ -488,101 +490,13 @@
             </div>
 
             <div class="blog-grid">
-                <!-- Artículo 1: Web Dev Trends 2024 -->
-                <div class="blog-card">
-                    <div class="blog-image">
-                        <img src="https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Tendencias Desarrollo Web 2024">
-                        <div class="blog-category">Desarrollo Web</div>
-                    </div>
-                    <div class="blog-content">
-                        <div class="blog-date">
-                            <i class="far fa-calendar"></i> 10 Abril 2024
-                        </div>
-                        <h3>Tendencias en Desarrollo Web 2024: El Futuro de la Web</h3>
-                        <p>Explora las últimas tendencias en desarrollo web, desde arquitecturas modernas hasta tecnologías emergentes.</p>
-                        <a href="pages/article.html?id=web-dev-trends-2024" class="blog-link">
-                            Leer artículo <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Artículo 2: Git para Trabajos Colaborativos -->
-                <div class="blog-card">
-                    <div class="blog-image">
-                        <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Git Colaboración">
-                        <div class="blog-category">Desarrollo</div>
-                    </div>
-                    <div class="blog-content">
-                        <div class="blog-date">
-                            <i class="far fa-calendar"></i> 9 Abril 2024
-                        </div>
-                        <h3>Git para Trabajos Colaborativos en Proyectos Web</h3>
-                        <p>Aprende a utilizar Git efectivamente para trabajos colaborativos en proyectos web.</p>
-                        <a href="pages/article.html?id=git-para-trabajos-colaborativos" class="blog-link">
-                            Leer artículo <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Artículo 3: VS Code Guide -->
-                <div class="blog-card">
-                    <div class="blog-image">
-                        <img src="https://images.pexels.com/photos/11035471/pexels-photo-11035471.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="VS Code Guide">
-                        <div class="blog-category">Herramientas</div>
-                    </div>
-                    <div class="blog-content">
-                        <div class="blog-date">
-                            <i class="far fa-calendar"></i> 8 Abril 2024
-                        </div>
-                        <h3>Visual Studio Code: La Herramienta Definitiva para Desarrolladores</h3>
-                        <p>Una guía completa sobre Visual Studio Code, explorando sus características y extensiones esenciales.</p>
-                        <a href="pages/article.html?id=vscode-guide" class="blog-link">
-                            Leer artículo <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
+                <!-- Los artículos se cargarán dinámicamente aquí -->
             </div>
         </div>
     </section>
 
-    <!-- Newsletter Section -->
-    <section id="contact" class="newsletter-section">
-        <div class="container newsletter-container">
-            <div class="newsletter-content">
-                <div class="newsletter-header">
-                    <span class="section-badge">Newsletter</span>
-                    <h2 class="section-title">Únete a la Comunidad Tech</h2>
-                    <p class="section-description">Recibe contenido exclusivo sobre desarrollo web, diseño y tecnología. Mantente actualizado con las últimas tendencias y recursos para impulsar tu carrera.</p>
-                </div>
-
-                <div class="newsletter-form-container">
-                    <form class="newsletter-form">
-                        <div class="newsletter-input-group">
-                            <input type="email" class="newsletter-input" placeholder="Tu correo electrónico" required>
-                        </div>
-                        <button type="submit" class="newsletter-submit">
-                            <i class="fas fa-paper-plane me-2"></i> Suscribirse
-                        </button>
-                    </form>
-
-                    <div class="newsletter-trust">
-                        <div class="trust-item">
-                            <i class="fas fa-shield-alt"></i>
-                            <span>Privacidad Garantizada</span>
-                        </div>
-                        <div class="trust-item">
-                            <i class="fas fa-bell"></i>
-                            <span>Actualizaciones Semanales</span>
-                        </div>
-                        <div class="trust-item">
-                            <i class="fas fa-gift"></i>
-                            <span>Recursos Exclusivos</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Newsletter Component -->
+    <div id="newsletter"></div>
 
     <!-- Footer Component -->
     <div id="footer"></div>

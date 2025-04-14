@@ -1,51 +1,81 @@
 {
     "articles": [
         {
-            "id": "web-dev-trends-2024",
-            "title": "Tendencias en Desarrollo Web 2024: El Futuro de la Web",
-            "description": "Explora las últimas tendencias en desarrollo web, desde arquitecturas modernas hasta tecnologías emergentes.",
-            "category": "Desarrollo Web",
-            "publishDate": "2024-04-10",
-            "readTime": "15 min",
-            "heroImage": "/images/articles/web-trends-hero.jpg"
+            "id": "git-basics",
+            "title": "Git Básico: Fundamentos para el Control de Versiones",
+            "description": "Aprende los conceptos fundamentales de Git y cómo implementar el control de versiones en tus proyectos.",
+            "date": "2024-04-10",
+            "author": "Nixon López",
+            "category": "Desarrollo",
+            "tags": ["git", "control de versiones", "desarrollo"],
+            "path": "articles/git-basics/content.md",
+            "image": "articles/git-basics/images/git-workflow.png"
         },
         {
-            "id": "git-para-trabajos-colaborativos",
-            "title": "Git para Trabajos Colaborativos en Proyectos Web",
-            "description": "Aprende a utilizar Git efectivamente para trabajos colaborativos en proyectos web.",
+            "id": "git-collaboration",
+            "title": "Git para Trabajos Colaborativos: Mejores Prácticas",
+            "description": "Guía completa sobre cómo utilizar Git para trabajos en equipo y colaboraciones efectivas.",
+            "date": "2024-04-09",
+            "author": "Nixon López",
             "category": "Desarrollo",
-            "publishDate": "2024-04-09",
-            "readTime": "10 min",
-            "heroImage": "/images/articles/git-collaboration.jpg"
+            "tags": ["git", "colaboración", "control de versiones"],
+            "path": "articles/git-collaboration/content.md",
+            "image": "articles/git-collaboration/images/git-collab.png"
+        },
+        {
+            "id": "github-importance",
+            "title": "GitHub: La Plataforma Esencial para Desarrolladores",
+            "description": "Descubre por qué GitHub es fundamental en el desarrollo moderno y cómo aprovechar al máximo sus características.",
+            "date": "2024-04-08",
+            "author": "Nixon López",
+            "category": "Desarrollo",
+            "tags": ["github", "colaboración", "desarrollo"],
+            "path": "articles/github-importance/content.md",
+            "image": "articles/github-importance/images/github-essentials.png"
+        },
+        {
+            "id": "scrum-methodology",
+            "title": "Metodología Scrum: Guía Práctica para Equipos Ágiles",
+            "description": "Implementa Scrum en tus proyectos de desarrollo con esta guía práctica y completa.",
+            "date": "2024-04-07",
+            "author": "Nixon López",
+            "category": "Metodologías",
+            "tags": ["scrum", "agile", "metodologías"],
+            "path": "articles/scrum-methodology/content.md",
+            "image": "articles/scrum-methodology/images/scrum-framework.png"
         },
         {
             "id": "vscode-guide",
             "title": "Visual Studio Code: La Herramienta Definitiva para Desarrolladores",
             "description": "Una guía completa sobre Visual Studio Code, explorando sus características y extensiones esenciales.",
+            "date": "2024-04-06",
+            "author": "Nixon López",
             "category": "Herramientas",
-            "publishDate": "2024-04-08",
-            "readTime": "12 min",
-            "heroImage": "/images/articles/vscode-hero.jpg"
+            "tags": ["vscode", "herramientas", "productividad"],
+            "path": "articles/vscode-guide/content.md",
+            "image": "articles/vscode-guide/images/vscode-features.png"
         },
         {
-            "id": "scrum-methodology",
-            "title": "Scrum: Guía Completa de la Metodología Ágil más Popular",
-            "description": "Descubre todo sobre Scrum, desde sus principios fundamentales hasta su implementación práctica.",
-            "category": "Metodologías",
-            "publishDate": "2024-04-07",
-            "readTime": "18 min",
-            "heroImage": "/images/articles/scrum-hero.jpg"
+            "id": "web-dev-trends",
+            "title": "Tendencias en Desarrollo Web 2024: El Futuro de la Web",
+            "description": "Explora las últimas tendencias en desarrollo web, desde arquitecturas modernas hasta tecnologías emergentes.",
+            "date": "2024-04-05",
+            "author": "Nixon López",
+            "category": "Desarrollo Web",
+            "tags": ["tendencias", "desarrollo web", "tecnología"],
+            "path": "articles/web-dev-trends/content.md",
+            "image": "articles/web-dev-trends/images/web-trends.png"
         }
     ],
     "categories": [
         {
-            "id": "desarrollo-web",
-            "name": "Desarrollo Web",
-            "count": 1
-        },
-        {
             "id": "desarrollo",
             "name": "Desarrollo",
+            "count": 3
+        },
+        {
+            "id": "metodologias",
+            "name": "Metodologías",
             "count": 1
         },
         {
@@ -54,15 +84,15 @@
             "count": 1
         },
         {
-            "id": "metodologias",
-            "name": "Metodologías",
+            "id": "desarrollo-web",
+            "name": "Desarrollo Web",
             "count": 1
         }
     ],
-    "featuredArticle": "web-dev-trends-2024",
+    "featuredArticle": "web-dev-trends",
     "latestArticles": [
-        "web-dev-trends-2024",
-        "git-para-trabajos-colaborativos",
-        "vscode-guide"
+        "git-basics",
+        "git-collaboration",
+        "github-importance"
     ]
 } 
